@@ -28,6 +28,11 @@ namespace TaxCalculator
                 }else if (choice == "3") {
                     Environment.Exit(0);
                 }
+                else
+                {
+                    Console.WriteLine("Comando non riconosciuto");
+                    Menu();
+                }
             }
             else
             {
@@ -40,6 +45,11 @@ namespace TaxCalculator
                 else if (choice == "2")
                 {
                     Environment.Exit(0);
+                }
+                else
+                {
+                    Console.WriteLine("Comando non riconosciuto");
+                    Menu();
                 }
             }
 
@@ -104,7 +114,7 @@ namespace TaxCalculator
                 Console.WriteLine(t.Name +" "+t.Surname+" imposta da pagare: "+ tax);
             }
             Console.WriteLine("==================================================");
-            //commento
+            
         }
     }
 }
