@@ -104,6 +104,7 @@ namespace TaxCalculator
                 Console.WriteLine(t.Name +" "+t.Surame+" imposta da pagare: "+ tax);
             }
             Console.WriteLine("==================================================");
+            //commento
         }
     }
 }
