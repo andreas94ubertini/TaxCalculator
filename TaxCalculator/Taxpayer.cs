@@ -9,7 +9,7 @@ namespace TaxCalculator
     internal class Taxpayer
     {
         public string Name { get; set; }
-        public string Surame { get; set; }
+        public string Surname { get; set; }
         public string Birthday { get; set; }
         public string TaxCode { get; set; }
         public string Gender { get; set; }
@@ -17,10 +17,10 @@ namespace TaxCalculator
         public double Income { get; set; }
 
         public Taxpayer() { }
-        public Taxpayer(string name, string surame, string birthday, string taxCode, string gender, string municipality, double income)
+        public Taxpayer(string name, string surname, string birthday, string taxCode, string gender, string municipality, double income)
         {
             Name = name;
-            Surame = surame;
+            Surname = surname;
             Birthday = birthday;
             TaxCode = taxCode;
             Gender = gender;

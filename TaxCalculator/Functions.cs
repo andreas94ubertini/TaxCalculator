@@ -85,7 +85,7 @@ namespace TaxCalculator
             Console.WriteLine("==================================================");
             Console.WriteLine("CALCOLO DELL’IMPOSTA DA VERSARE:");
             Console.WriteLine();
-            Console.WriteLine($"Contribuente: {taxpayer.Name} {taxpayer.Surame},");
+            Console.WriteLine($"Contribuente: {taxpayer.Name} {taxpayer.Surname},");
             Console.WriteLine($"nato il: {taxpayer.Birthday} ({taxpayer.Gender.Substring(0,1).ToUpper()}),");
             Console.WriteLine($"residente in : {taxpayer.Municipality},");
             Console.WriteLine($"codice fiscale : {taxpayer.TaxCode}");
@@ -101,7 +101,7 @@ namespace TaxCalculator
             foreach (Taxpayer t in taxpayers)
             {
                 string tax = String.Format("{0:0,0.0€}", t.TaxToPay());
-                Console.WriteLine(t.Name +" "+t.Surame+" imposta da pagare: "+ tax);
+                Console.WriteLine(t.Name +" "+t.Surname+" imposta da pagare: "+ tax);
             }
             Console.WriteLine("==================================================");
             //commento
